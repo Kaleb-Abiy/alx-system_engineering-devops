@@ -17,11 +17,11 @@
 
 Host *
 #   ForwardAgent no
-   ForwardX11 yes
+#   ForwardX11 no
 #   ForwardX11Trusted yes
 #   RhostsRSAAuthentication no
 #   RSAAuthentication yes
-#   PasswordAuthentication yes
+#   PasswordAuthentication no
 #   HostbasedAuthentication no
 #   GSSAPIAuthentication no
 #   GSSAPIDelegateCredentials no
@@ -35,6 +35,8 @@ Host *
 #   IdentityFile ~/.ssh/identity
 #   IdentityFile ~/.ssh/id_rsa
 #   IdentityFile ~/.ssh/id_dsa
+#   IdentityFile ~/.ssh/school
+#   IdentityFile ./school
 #   Port 22
 #   Protocol 2,1
 #   Cipher 3des
@@ -51,5 +53,4 @@ Host *
     HashKnownHosts yes
     GSSAPIAuthentication yes
     GSSAPIDelegateCredentials no
-    IdentityFile ~/.ssh/holberton
-    PasswordAuthentication no
+
